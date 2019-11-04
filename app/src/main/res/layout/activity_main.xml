@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <CalendarView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/calenderView"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:id="@+id/buttons"
+        android:layout_below="@+id/calenderView">
+
+        <Button
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/punchIn"
+            android:layout_margin="10dp"
+            android:background="@color/colorPrimary"
+            android:textColor="#ffffff"
+            android:text="Punch-In">
+        </Button>
+
+        <Button
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/punchOut"
+            android:background="@color/colorPrimary"
+            android:layout_margin="10dp"
+            android:textColor="#ffffff"
+            android:text="Punch-Out">
+        </Button>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:layout_below="@+id/buttons">
+
+        <TextView
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/punchIntime"
+            android:layout_margin="10dp"
+            android:gravity="center"
+            android:text="Punch-In Time">
+        </TextView>
+
+        <TextView
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/punchOuttime"
+            android:layout_margin="10dp"
+            android:gravity="center"
+            android:text="Punch-Out Timme">
+        </TextView>
+
+    </LinearLayout>
+
+</RelativeLayout>
